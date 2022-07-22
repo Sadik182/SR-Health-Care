@@ -1,0 +1,12 @@
+.service {
+    background-color: rgb(240, 246, 248);
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 50px;
+}
+
+.details {
+    width: 100px;
+    font-weight: bold;
+    border-radius: 5px;
+}

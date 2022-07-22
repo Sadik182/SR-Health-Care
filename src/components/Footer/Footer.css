@@ -1,0 +1,10 @@
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
+
+.department ul li {
+    list-style-type: none;
+
+}

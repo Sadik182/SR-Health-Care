@@ -1,0 +1,9 @@
+.login-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+.form {
+    border: 1px solid rgb(34, 126, 118);
+}
