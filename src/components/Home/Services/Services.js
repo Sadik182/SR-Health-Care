@@ -15,7 +15,6 @@ const Services = () => {
                services.map(service => <Service
                key = {service.sId}
                service = {service}
-               
                ></Service>)
            } 
         </div>
