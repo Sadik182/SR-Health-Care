@@ -16,7 +16,7 @@ const Header = () => {
             <Nav.Link as={Link} to="/register">
               Register
             </Nav.Link>
-            <span style={{color: 'white', textAlign: 'center'}}>{user.displayName && user.displayName}</span>
+            <span style={{color: 'white', marginTop: '8px'}}>{user.displayName && user.displayName}</span>
             {
               user?.uid ?
               <Nav.Link as={Link} onClick={logOut}>
