@@ -4,11 +4,13 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Header from "./components/Header/Header";
 import Home from "./components/Home/Home";
 import Footer from "./components/Footer/Footer";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import NotFound from "./components/NotFound/NotFound";
 import Login from "./components/Login/Login";
 import AuthProvider from "./context/AuthProvider";
 import Register from "./components/Register/Register";
+import RequireAuth from "./components/RequireAuth/RequireAuth";
+import Orders from "./components/Orders/Orders";
 
 function App() {
   return (
@@ -16,23 +18,18 @@ function App() {
       <AuthProvider>
         <Router>
           <Header></Header>
-          <Switch>
-            <Route exact path="/">
-              <Home></Home>
-            </Route>
-            <Route path="/home">
-              <Home></Home>
-            </Route>
-            <Route path="/login">
-              <Login></Login>
-            </Route>
-            <Route path="/register">
-              <Register></Register>
-            </Route>
-            <Route path="*">
-              <NotFound></NotFound>
-            </Route>
-          </Switch>
+          <Routes>
+            <Route path="/" element={<Home></Home>} />
+            <Route path="/home" element={<Home></Home>} />
+            <Route path="/orders" element={
+              <RequireAuth>
+                <Orders></Orders>
+              </RequireAuth>
+            } />
+            <Route path="/login" element={<Login></Login>} />
+            <Route path="/register" element={<Register></Register>}/>
+            <Route path="*" element={<NotFound></NotFound>}/>
+          </Routes>
           <Footer></Footer>
         </Router>
       </AuthProvider>

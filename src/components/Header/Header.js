@@ -13,13 +13,16 @@ const Header = () => {
             <Nav.Link as={Link} to="/home">
               Home
             </Nav.Link>
+            <Nav.Link as={Link} to="/orders">
+              Orders
+            </Nav.Link>
             <Nav.Link as={Link} to="/register">
               Register
             </Nav.Link>
             <span style={{color: 'white', marginTop: '8px'}}>{user.displayName && user.displayName}</span>
             {
               user?.uid ?
-              <Nav.Link as={Link} onClick={logOut}>
+              <Nav.Link as={Link} onClick={logOut} to="home">
                   Log Out
               </Nav.Link> :
               <Nav.Link as={Link} to="/login#login">
