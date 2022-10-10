@@ -1,4 +1,5 @@
 import React from "react";
+import './Banner.css'
 import { Carousel} from "react-bootstrap";
 import img1 from "../../../images/1.jpg";
 import img2 from "../../../images/2.jpg";
@@ -30,7 +31,7 @@ const Banner = () => {
         <Carousel.Item>
           <img className="d-block w-100 h-100" src={img1} alt="Third slide" />
 
-          <Carousel.Caption>
+          <Carousel.Caption >
           <h3 className="text-dark fw-bold">
               What Makes Us Better, Makes You Better 1
             </h3>
