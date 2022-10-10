@@ -13,6 +13,12 @@ const Header = () => {
             <Nav.Link as={Link} to="/home">
               Home
             </Nav.Link>
+            <Nav.Link as={Link} to="/about">
+              About Us
+            </Nav.Link>
+            <Nav.Link as={Link} to="/sercices">
+              Services
+            </Nav.Link>
             <Nav.Link as={Link} to="/orders">
               Orders
             </Nav.Link>
