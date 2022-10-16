@@ -3,18 +3,18 @@ import './Footer.css';
 
 const Footer = () => {
   return (
-    <div className="footer bg-dark text-white">
-      <div className="m-5 ">
-        <h1>About SR-Health-Care</h1>
-        <p>
-          Our staff members are well trained <br />  professionals, We will fix the <br />
-          requested records directly to the <br /> qualified doctors the day before or<br /> 
+    <div className="row bg-dark text-white">
+      <div className="col-lg-5 col-sm-12">
+        <h1 className="text-center mt-3 fw-bold">About SR-Health-Care</h1>
+        <p className="text-center p-3">
+          Our staff members are well trained and professionals, We will fix the 
+          requested records directly to the qualified doctors the day before or
           the day of the appointment.
         </p>
       </div>
-      <div className="department m-5">
-        <h1>Department</h1>
-        <ul>
+      <div className="col-lg-3 col-sm-6">
+        <h1 className="text-center mt-3 fw-bold">Department</h1>
+        <ul className="text-center ">
           <li>Laboratory</li>
           <li>Dental Care</li>
           <li>Ophthalmology</li>
@@ -23,12 +23,14 @@ const Footer = () => {
           <li>Neurology</li>
         </ul>
       </div>
-      <div>
-          <h1>Contact Details</h1>
+      <div className="col-lg-3 col-sm-6">
+          <h1 className=" mt-3 fw-bold">Contact Details</h1>
+          <div className="">
           <p>Uttara Sector, 10 Dhaka</p>
           <p>Tell: 154878554</p>
           <p>Email: <a href="#">Srhealthcare@gmail.com</a> </p>
           <p>Website: <a href="#">HealthCare.Com</a> </p>
+          </div>
       </div>
     </div>
   );
