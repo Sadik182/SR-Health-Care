@@ -10,6 +10,7 @@ import AuthProvider from "./context/AuthProvider";
 import Register from "./components/Register/Register";
 import Orders from "./components/Orders/Orders";
 import PrivateRoute from "./components/PrivateRoute/PrivateRoute";
+import ServiceDetails from "./components/ServiceDetails/ServiceDetails";
 
 function App() {
   return (
@@ -31,6 +32,7 @@ function App() {
             />
             <Route path="/login" element={<Login></Login>} />
             <Route path="/register" element={<Register></Register>} />
+            <Route path="/service/:serviceId" element={<ServiceDetails></ServiceDetails>}></Route>
             <Route path="*" element={<NotFound></NotFound>} />
           </Routes>
           <Footer></Footer>
