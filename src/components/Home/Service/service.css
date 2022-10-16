@@ -1,8 +1,9 @@
 .service {
-    background-color: rgb(240, 246, 248);
+    background-color: rgb(128, 137, 139);
     padding: 10px;
     border-radius: 5px;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
+    
 }
 
 .details {
