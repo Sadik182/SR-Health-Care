@@ -11,6 +11,7 @@ import Register from "./components/Register/Register";
 import Orders from "./components/Orders/Orders";
 import PrivateRoute from "./components/PrivateRoute/PrivateRoute";
 import ServiceDetails from "./components/ServiceDetails/ServiceDetails";
+import Service from "./components/Home/Service/Service";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home></Home>} />
             <Route path="/home" element={<Home></Home>} />
+            <Route path="/service" element={<Home></Home>} />
             <Route
               path="/orders"
               element={
