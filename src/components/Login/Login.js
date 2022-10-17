@@ -26,11 +26,9 @@ const {signInUsingGoogle, user, signInUsingEmailAndPassword} = allContext;
 
   const handleEmailLogin = e => {
     e.preventDefault();
+    console.log(email, password);
     signInUsingEmailAndPassword(auth, email, password)
-    .then(result => {
-      navigate(redirect_uri);
-    })
-            
+             
   }
   if(user) {
     navigate('/home');
@@ -41,14 +39,14 @@ const {signInUsingGoogle, user, signInUsingEmailAndPassword} = allContext;
         <h2>Login</h2>
         <Form onSubmit={handleEmailLogin}>
           <Form.Group className="mb-3" controlId="formBasicEmail">
-            <Form.Control onChange={(e) => setEmail(e.target.value)} type="email" placeholder="Enter email" />
+            <Form.Control onBlur={(e) => setEmail(e.target.value)} type="email" placeholder="Enter email" />
             <Form.Text className="text-muted">
               We'll never share your email with anyone else.
             </Form.Text>
           </Form.Group>
 
           <Form.Group className="mb-3" controlId="formBasicPassword">
-            <Form.Control onChange={(e) => setPassword(e.target.value)} type="password" placeholder="Password" />
+            <Form.Control onBlur={(e) => setPassword(e.target.value)} type="password" placeholder="Password" />
           </Form.Group>
           <Button variant="primary" type="submit">
             Login <FontAwesomeIcon icon={faSignInAlt}></FontAwesomeIcon>
