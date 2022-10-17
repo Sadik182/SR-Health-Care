@@ -11,32 +11,32 @@ const Banner = () => {
       <Carousel fade>
         <Carousel.Item>
           <img className="d-block w-100 " src={img3} alt="First slide" />
-          <Carousel.Caption>
-            <h3 className="text-dark fw-bold">
-              What Makes Us Better, Makes You Better 3
+          <Carousel.Caption className='background'>
+            <h3 className="text-white fw-bold fs-2">
+              What Makes Us Better, Makes You Better 
             </h3>
-            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+            <p>Our first goal is to give you better services. We will be happy if you feel happy</p>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
           <img className="d-block w-100 h-100" src={img2} alt="Second slide" />
 
-          <Carousel.Caption>
-          <h3 className="text-dark fw-bold">
-              What Makes Us Better, Makes You Better 2
+          <Carousel.Caption className='background'>
+          <h3 className="text-white fw-bold">
+              Trust Our Professional Doctors
             </h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <p>You will find very professional doctors here for your tretment.</p>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
           <img className="d-block w-100 h-100" src={img1} alt="Third slide" />
 
-          <Carousel.Caption >
-          <h3 className="text-dark fw-bold">
-              What Makes Us Better, Makes You Better 1
+          <Carousel.Caption className='background'>
+          <h3 className="text-white fw-bold">
+              All Kind of Medical Services we Provide
             </h3>
             <p>
-              Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+              Here our all the doctors are ready to help you for any kind of assistance
             </p>
           </Carousel.Caption>
         </Carousel.Item>

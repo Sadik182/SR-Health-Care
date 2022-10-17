@@ -12,7 +12,7 @@ const ServiceDetails = () => {
     (service) => service.sId === Number(serviceId)
   );
   console.log(matchedService);
-  const {name, price, description, img } = matchedService;
+//   const {name, price, description, img } = matchedService;
 
   return (
     <>
@@ -21,12 +21,12 @@ const ServiceDetails = () => {
         <Container>
             <div className="serviceDetails row">
           <div className="col-lg-5 col-sm-12">
-            <img className="rounded-3" src={img} alt="service" />
+            <img className="rounded-3 w-100" src={matchedService.img} alt="service" />
           </div>
           <div className="col-lg-5 col-sm-12">
-            <h3>Name: {name}</h3>
-            <h5>Price: {price}</h5>
-            <p>{description}</p>
+            <h3>Name: {matchedService.name}</h3>
+            <h5>Price: {matchedService.price}</h5>
+            <p>{matchedService.description}</p>
           <button className="details">Add To Cart</button>
           </div>
         </div>

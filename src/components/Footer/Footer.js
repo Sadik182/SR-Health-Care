@@ -23,7 +23,7 @@ const Footer = () => {
           <li>Neurology</li>
         </ul>
       </div>
-      <div className="col-lg-3 col-sm-6">
+      <div className="col-lg-4 col-sm-6">
           <h1 className=" mt-3 fw-bold">Contact Details</h1>
           <div className="">
           <p>Uttara Sector, 10 Dhaka</p>

@@ -2,3 +2,8 @@
     top: 50%;
     bottom: auto;
 }
+.background {
+    background-color: rgba(31, 30, 30, 0.452);
+    border: 1px solid rgba(31, 30, 30, 0.452);
+    border-radius: 20px;
+}
