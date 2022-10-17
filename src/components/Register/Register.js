@@ -1,3 +1,5 @@
+import { faUserPlus } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import { Form, Button } from "react-bootstrap";
 import { Link, useLocation, useNavigate } from "react-router-dom";
@@ -32,7 +34,7 @@ const Register = () => {
             <Form.Control type="password" placeholder="Password" />
           </Form.Group>
           <Button variant="primary" type="submit">
-            Submit
+            Register <FontAwesomeIcon icon={faUserPlus}></FontAwesomeIcon>
           </Button>
         </Form>
         <p>
@@ -40,7 +42,7 @@ const Register = () => {
         </p>
 
         <div>-------------or---------------</div>
-        <button onClick={handleGoogleLogin} className="btn-warning">Google Sign In</button>
+        <button onClick={handleGoogleLogin} className="btn-warning">Google SignIn</button>
       </div>
     </div>
   );

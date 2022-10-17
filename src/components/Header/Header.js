@@ -35,7 +35,7 @@ const Header = () => {
                   Log Out
                 </Nav.Link>
               ) : (
-                <Nav.Link as={Link} to="/login#login">
+                <Nav.Link as={Link} to="/login">
                   Login
                 </Nav.Link>
               )}

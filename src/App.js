@@ -34,7 +34,7 @@ function App() {
             />
             <Route path="/login" element={<Login></Login>} />
             <Route path="/register" element={<Register></Register>} />
-            <Route path="/service/:serviceId" element={<ServiceDetails></ServiceDetails>}></Route>
+            <Route path="/service/:serviceId" element={<PrivateRoute><ServiceDetails></ServiceDetails></PrivateRoute>}></Route>
             <Route path="*" element={<NotFound></NotFound>} />
           </Routes>
           <Footer></Footer>
